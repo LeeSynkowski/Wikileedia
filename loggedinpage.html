@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% autoescape true %}
+<html>
+<body>
+<table>
+<tr>
+  <td>-------------------------------------------</td>
+  <td><a href="{{ page }}">edit</a>
+  <td>/</td>
+  <td><a href='/logout'>logout</a>
+</tr>
+</table>
+     {{ content }}
+</body>
+</html>
+{% endautoescape %}

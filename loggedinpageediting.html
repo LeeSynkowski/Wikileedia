@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% autoescape true %}
+<html>
+<body>
+<table>
+<tr>
+  <td>-------------------------------------------</td>
+  <td><a href="{{ page }}">view</a>
+  <td>/</td>
+  <td><a href='/logout'>logout</a>
+</tr>
+</table>
+<form method="post" action="/_edit{{ page }}">
+     <textarea cols="40" rows="10" name="content">{{ content }}</textarea>
+     <br>
+     <div><input type="submit" value="Save"></div>
+</form>
+</body>
+</html>
+{% endautoescape %}

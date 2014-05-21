@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% autoescape true %}
+<html>
+<body>
+<form method="post" action="/login">
+	<p>
+	<h2>Login</h2>	
+	</p>	
+	Username<input type="text" name="username" value="{{ t_username }}">{{ t_username_message }}
+	<br>
+	Password<input type="password" name="password" value = "{{ t_password }}" > {{ t_password_message }}
+	<br>
+	<p>
+		<input type="submit" value="Submit">
+	</p>
+</form>
+<br>
+{{ t_user_message }}
+</body>
+</html>
+{% endautoescape %}
